@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Events from './componment/Events'
+import Event from './componment/Event'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,8 +11,9 @@ function App() {
   return (
     <>
     <Event/>
+    <Events/>
      
-      <h1>test</h1>
+      
     </>
   )
 }
