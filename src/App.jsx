@@ -4,15 +4,22 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Events from './componment/Events'
 import Event from './componment/Event'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import NotFound from './componment/NotFound'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-    <Event/>
-    <Events/>
-     
+   <>
+   <Routes>
+   <Route path='/homme' element={<Event/>}></Route>
+   <Route path='*' element={<NotFound/>}></Route>
+
+    
+
+    </Routes>
+    
       
     </>
   )
