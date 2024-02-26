@@ -14,6 +14,7 @@ function App() {
    <>
    <Routes>
    <Route path='/homme' element={<Event/>}></Route>
+   <Route path="/about/:username" element={<About/>} />
    <Route path='*' element={<NotFound/>}></Route>
 
     
